@@ -41,5 +41,6 @@ To be able to implement this, the base code is also been **modified** to accept 
 Since the default is a `.txt` report that has many paragraphs that takes a lot of time to copy into a result table, I have also written a Java operation to convert the report into a `.csv` table. See `ReadToCsv.java`.
 
 ## Initial result
-[Report](https://github.com/tuankhoin/pacman-AI-agent/blob/master/Assignment2_Experiment.pdf)
+[Report for 1st version](https://github.com/tuankhoin/pacman-AI-agent/blob/master/Assignment2_Experiment.pdf)
+
 *Initial problem has been detected. The node priority is not set correctly. Fixed!*
