@@ -119,8 +119,9 @@ bool applyAction(node_t* n, node_t** new_node, move_t action ){
 	bool changed_dir = false;
 
 	*new_node = (node_t *) malloc(sizeof(node_t));
-	(*new_node)->priority = n->priority--;
-  (*new_node)->depth = n->depth++;
+	(*new_node)->depth = n->depth++;
+	(*new_node)->priority = n->depth;
+  
 
   (*new_node)->num_childs = 0;
   (*new_node)->move = action;
