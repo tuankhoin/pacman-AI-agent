@@ -3,20 +3,16 @@
 For this project, I will be implementing Dijkstra's algorithm, create an AI agent to play the game Pacman.
 
 ## How Pacman works
-Adapted from Wikipedia and University of Melbourne COMP20003 Team:
-
 For how to play, see [Pacman Wikipedia](https://en.wikipedia.org/wiki/Pac-Man)
 An AI agent or human player can change the direction of Pac-Man movements
 
 ## How my AI works
 
 ### Implementation
-
 The AI that I created will be applied to the base gaming code, adapted from the open-source terminal version made available by
 [Mike Billars](https://sites.google.com/site/doctormike/pacman.html) and the original version can be installed as a standard package in [Ubuntu](https://packages.ubuntu.com/xenial/games/pacman4console).
 
 ### Algorithm
-
 The Pac-Man Graph G = {V, E} is implicitly defined. The vertex set V is defined as all the possible configurations (states),
 and the edges E connecting two vertexes are defined by the legal movements (right, left, up, down).
 
@@ -32,7 +28,6 @@ For every step, find the highest score return of the available moves and execute
 * avg: compute the average of the rewards, that is, the total reward divided by the number of the movement node's children.
 
 ## Additional improvements:
-
 The previous implementation can make the AI less deterministic when going in empty areas (equal score for all available steps), making it likely to oscillates around. So to make it more deterministic, I have added a further tie break logic to avoid the AI to repeat its route, set on priorities:
 1. The movement is prependicular to the old move (Random tie break in case of 2 available prependicular moves).
 2. If no prependicular movement is available, do not change direction.
