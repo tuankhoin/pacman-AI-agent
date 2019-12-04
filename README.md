@@ -28,9 +28,14 @@ For every step, find the highest score return of the available moves and execute
 * max: adds up all of the rewards, stops when a move leads to a life lost.
 * avg: compute the average of the rewards, that is, the total reward divided by the number of the movement node's children.
 
-## Additional improvements:
+## Additional improvements
+
+### Algorithm improvement
 The previous implementation can make the AI less deterministic when going in empty areas (equal score for all available steps), making it likely to oscillates around. So to make it more deterministic, I have added a further tie break logic to avoid the AI to repeat its route, set on priorities:
 1. The movement is prependicular to the old move (Random tie break in case of 2 available prependicular moves).
 2. If no prependicular movement is available, do not change direction.
 
 To be able to implement this, the base code is also been **modified** to accept more inputs.
+
+### Lazy conversion
+Since the default is a `.txt` report that has many paragraphs that takes a lot of time to copy into a result table, I have also written a Java operation to convert the report into a `.csv` table. See `ReadToCsv.java`.
