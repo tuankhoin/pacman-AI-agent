@@ -4,6 +4,7 @@ For this project, I will be implementing Dijkstra's algorithm, create an AI agen
 
 ## How Pacman works
 For how to play, see [Pacman Wikipedia](https://en.wikipedia.org/wiki/Pac-Man)
+
 An AI agent or human player can change the direction of Pac-Man movements
 
 ## How my AI works
