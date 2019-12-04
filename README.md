@@ -1,6 +1,6 @@
-# Create an AI agent to play Pacman, using implementation of Dijkstra's algorithm and heuristics
+# Create an AI agent to play Pacman
 
-For this project, I will be implementing Dijkstra's algorithm, create an AI agent to play the game Pacman.
+For this project, I will be implementing Dijkstra's algorithm and heuristics to create an AI agent that can play the game Pacman.
 
 ## How Pacman works
 For how to play, see [Pacman Wikipedia](https://en.wikipedia.org/wiki/Pac-Man)
