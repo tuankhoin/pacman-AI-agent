@@ -1,0 +1,8 @@
+Propagation : MAX
+Budget: 100
+Max depth: 67
+Total expanded nodes: 5300
+Total generated nodes: 10600
+Time passed= 4.582513 seconds
+Expanded node/second: 1156.570641
+Scores: 0
